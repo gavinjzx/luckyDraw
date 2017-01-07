@@ -10,8 +10,12 @@ js:jquery
 css:animation
 
 文件结构：
-\index.html  		抽奖主界面
-\js\index.js 		JS主程序
-jquery-1.12.4.min.js	jQuery文件
-\js\lib\common.js	一些
+\index.html  			抽奖主界面
+\js\index.js	 		JS主程序
+\js\lib\jquery-1.12.4.min.js	jQuery文件
+\js\lib\common.js		一些公用函数
+\css\animate.css		css3 animation库
+\css\style.less			样式Less文件
+\css\widget\*.less		style.less引用的less文件
+\css\img\			页面上所用到的图标文件
 
