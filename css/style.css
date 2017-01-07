@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑", "黑体", arial;
+}
+
+html {
+    height: 100%;
+    font-size: 12px;
+}
+
+:focus {
+    outline: none;
+    border: none;
+}
+
+button {
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+html {
+    height: 100%;
+}
+
+.Dialog,
+.Confirm {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 100;
+    display: table;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
+
+.Dialog > div,
+.Confirm > div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.Dialog > div > div,
+.Confirm > div > div {
+    background: #fff;
+    padding: 2rem;
+    width: 50rem;
+    margin: 0 auto;
+    color: #023e73;
+    border-radius: 1rem;
+    box-sizing: border-box;
+}
+
+.Dialog > div > div button,
+.Confirm > div > div button {
+    display: inline-block;
+    margin: 2rem 1rem 0 1rem;
+    background: #FFC21C;
+    padding: 1rem 5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#bgLuckyDrawEnd {
+    position: absolute;
+    z-index: -10;
+}
+
+#bgLuckyDrawEnd.bg {
+    background: url(img/bgLight.png) no-repeat center center;
+    -webkit-animation: lightAnimation 5s infinite linear;
+    -moz-animation: lightAnimation 5s infinite linear;
+    -o-animation: lightAnimation 5s infinite linear;
+    animation: lightAnimation 5s infinite linear;
+}
+
+#iconDiv {
+    position: absolute;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+    z-index: -100;
+}
+
+#iconDiv > span {
+    position: absolute;
+}
+
+#iconDiv > span:nth-child(1) {
+    left: 126px;
+    top: 169px;
+}
+
+#iconDiv > span:nth-child(2) {
+    left: 210px;
+    top: 103px;
+}
+
+#iconDiv > span:nth-child(3) {
+    left: 292px;
+    top: 25px;
+}
+
+#iconDiv > span:nth-child(4) {
+    left: 432px;
+    top: 54px;
+}
+
+#iconDiv > span:nth-child(5) {
+    left: 545px;
+    top: 107px;
+}
+
+#iconDiv > span:nth-child(6) {
+    left: 561px;
+    top: 163px;
+}
+
+@keyframes lightAnimation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes lightAnimation {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+body {
+    background: #FFC21C;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+}
+
+body > div {
+    background: url(img/bg.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -300px auto auto -400px;
+    width: 800px;
+    height: 600px;
+}
+
+body > div > header {
+    margin: 0 auto;
+    height: 290px;
+    background: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+
+body > div > header > div {
+    vertical-align: middle;
+}
+
+body > div > section {
+    background: rgba(0, 0, 0, 0);
+    width: 558px;
+    height: 184px;
+    margin: 18px auto 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+body > div > section #luckyDrawing {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 100px;
+    margin-left: -100px;
+    margin-top: -50px;
+}
+
+body > div > section #luckyDrawing input {
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body > div > section > #result {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: table;
+}
+
+body > div > section > #result > div {
+    display: table-cell;
+    vertical-align: middle;
+    color: black;
+}
+
+body > div > section > #result > div > span {
+    display: block;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 14.28571%;
+}
+
+body > div > section > #result > div > span > b {
+    color: #1D6DCD;
+}
+
+body > div > section > #result > div.p1 > span {
+    width: 100%;
+    font-size: 8rem;
+}
+
+body > div > section > #result > div.p2 > span {
+    width: 50%;
+    font-size: 4rem;
+}
+
+body > div > section > #result > div.p3 > span {
+    width: 33.333333%;
+    font-size: 3.5rem;
+}
+
+body > div > section > #result > div.p4 > span {
+    width: 25%;
+    font-size: 3rem;
+}
+
+body > div > section > #result > div.p5 > span,
+body > div > section > #result > div.p6 > span,
+body > div > section > #result > div.p7 > span,
+body > div > section > #result > div.p8 > span,
+body > div > section > #result > div.p9 > span,
+body > div > section > #result > div.p10 > span {
+    width: 25%;
+    font-size: 2.5rem;
+}
+
+body > div > section > #result > div.p11 > span,
+body > div > section > #result > div.p12 > span,
+body > div > section > #result > div.p13 > span,
+body > div > section > #result > div.p14 > span,
+body > div > section > #result > div.p15 > span,
+body > div > section > #result > div.p16 > span,
+body > div > section > #result > div.p17 > span,
+body > div > section > #result > div.p18 > span,
+body > div > section > #result > div.p19 > span,
+body > div > section > #result > div.p20 > span,
+body > div > section > #result > div.p21 > span,
+body > div > section > #result > div.p22 > span,
+body > div > section > #result > div.p23 > span,
+body > div > section > #result > div.p24 > span,
+body > div > section > #result > div.p25 > span {
+    width: 20%;
+    font-size: 2rem;
+}
+
+body > div > footer {
+    height: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+body > div > footer > div {
+    vertical-align: middle;
+    background: rgba(0, 0, 0, 0);
+    margin-top: 60px;
+}
+
+body > div > footer > div > input {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 172px;
+    margin-right: 16px;
+}
+
+body > div > footer > div > button {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    height: 3rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+body > div > footer > div > button#btnStart {
+    width: 361px;
+    margin-right: 16px;
+    color: white;
+}
+
+body > div > footer > div > button#btnReset {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    padding: 0;
+    display: inline-block;
+}

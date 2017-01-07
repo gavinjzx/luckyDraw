@@ -1,0 +1,40 @@
+.Dialog, .Confirm {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 100;
+  display: table;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  > div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    > div {
+      background: #fff;
+      padding: 2rem;
+      width: 50rem; //pc端请使用不要太宽，要不然不美观。手机端可以设成80%宽度
+      margin: 0 auto;
+      color: #023e73;
+      border-radius: 1rem;
+      box-sizing: border-box;
+      button {
+        display: inline-block;
+        margin: 2rem 1rem 0 1rem;
+        background: @bgcolor;
+        padding: 1rem 5rem;
+        font-size: 1.2rem;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
