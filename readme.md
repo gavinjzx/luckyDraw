@@ -32,5 +32,5 @@ css:animation
 在线演示：
 http://www.at4321.com/case/web/bgi/luckyMan/
 
-我的个人网站http://www.at4321.com(建议用手机浏览)
-
+我的个人网站(建议用手机浏览)
+http://www.at4321.com
